@@ -1,0 +1,124 @@
+
+.todo-item{
+    display: flex;
+    outline: none;
+    border-bottom: 1px dotted #666;
+    height: 60px;
+    overflow: hidden;
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+.btn-icon{
+    border-radius: 60px;
+    height: 40px;
+    width: 40px;
+    border: solid 1px #2a2a2a;
+    background: #2a2a2a;
+    color: white;
+    padding: 7px;
+}
+
+.edit-btn{
+    margin-right: 5px;
+}
+
+.todo-info{
+    flex: 1;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.todo-description{
+    font-size: 12px;
+    font-weight: 100;
+    margin-left: 25px;
+}
+
+.todo-form .input-form-control{
+    outline: none;
+    border: 0;
+    border-bottom: 1px dotted #666;
+    border-radius: 0;
+    padding: 0 0 5px 0;
+    width: 100%;
+    height: 84px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #000;
+    background: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+
+.todo-create-btn{
+    background-color:green;
+    margin-top: 5px;
+    width: 130px;
+    text-align: center;
+}
+.todo-clear-btn{
+    background-color: rgb(251, 8, 8);
+    margin-top: 5px;
+    width: 130px;
+    text-align: center;
+}
+
+.filter-btn {
+    color: #d2d2d2;
+    outline: none;
+}
+.active-filter-btn{
+    color: rgb(231, 96, 39);
+    font-weight: 800;
+}
+
+.filter-todo{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.export-btn{
+    color: rgb(237, 12, 12);
+    outline: none;
+    font-weight: 800;
+}
+
+.selected{
+    background-color: #27ec27;
+}
+.notSelected{
+    background-color: #e92a2a;
+}
+
+.spin{
+	width: 200px;
+	height: 200px;
+	border: 5px solid;
+	margin: 200px auto;
+	border-radius: 50%;
+	border-color: #33c7f8 transparent;
+	animation: spin 2s linear infinite;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+
+}
+
+@keyframes spin{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.select{
+ color: #041ee0;   
+}
